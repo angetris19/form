@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>taskform</title>
+        <style>
+            .container{
+                background-color: lightblue;
+                width:60%;
+                gap: 20px;
+                margin:0 auto;
+                padding: 20px;
+
+            }
+            .formcontainer{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                padding: 60px;
+                gap: 20px;
+               
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                gap:60px;
+            }
+            .names{
+                display: flex;
+                flex-direction: row;
+            }
+            .names * {
+                flex: 1;
+                background-color: #ccc;
+
+            }
+            .email-and-phone{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+
+            }
+            .email-and-phone * {
+                flex: 1;
+                background-color: rgb(197,197,251);
+            }
+            #adress{
+                background-color: rgb(8,35,238);
+                height: 50px;
+            }
+            button{
+                width: 50px;
+                height: 20px;
+                background-color: rgb(8,35,238);
+                border-radius: 10px;
+                align-self: center;
+               
+            }
+            input{
+                border-radius: 5px;
+            }
+            h5{
+            font-size: 10px;
+            color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="formcontainer">
+            <h4>GET IN TOUCH</h4>
+            <form action="">
+                    <div class="names">
+                        <input type="text" placeholder="FIRST NAME">
+                        <input type="text" placeholder="LAST NAME">
+                    </div>
+                    <div class="email-and-phone">
+                    
+                    <input type="text" placeholder="phone">
+                    <input type="text" placeholder=" email">
+                </div>
+               
+                    <input type="text" placeholder="type your message"id="adress">
+                    <button type="submit">submit</button>
+                </form>
+                <h5> thanks for your submitting</h5>
+            </div>
+        </div>
+    </body>
+</html>

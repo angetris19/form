@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <title>responsive</title>
+    <style>
+        h1{
+            font-size: 25px;
+            color: green;
+        }
+        .cards{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .card{
+            width: 50%;
+            height: 400px;
+            background-color: rgb(42, 42, 94);
+        }
+        @media screen and(max-width:480px){
+            h1{
+                font-size: 18px;
+                color: tomato;
+            }
+            body{
+                background-color: cyan;
+                color: white;
+
+            }
+            .cards{
+                flex-direction: column;
+            }
+            .card{
+                background-color: blueviolet;
+                
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Responsiveness</h1>
+        <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+</div>
+</body>
+</html>
